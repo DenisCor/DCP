@@ -167,7 +167,7 @@ export default function CustomizedDialogs(props) {
             target='_blank'
             href={props.url}
           >
-            Visit Website
+            Visit Web App
           </Button>
         </DialogActions>
       </Dialog>

@@ -100,7 +100,11 @@ const App = () => {
           <Navbar />
         </Element>
 
-        <Canvas colorManagement camera={{ position: [0, 100, 0], fov: 12 }}>
+        <Canvas
+          colorManagement
+          camera={{ position: [0, 100, 0], fov: 12 }}
+          style={{ cursor: 'pointer' }}
+        >
           <EffectComposer>
             <Bloom intensity={0.2} />
             <Glitch />

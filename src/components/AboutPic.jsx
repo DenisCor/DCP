@@ -10,6 +10,7 @@ import Fade from 'react-reveal/Fade';
 import SaveIcon from '@material-ui/icons/Save';
 import Flip from 'react-reveal/Flip';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import Image from './Image';
 
 const useStyles = makeStyles(() => ({
   // root: {
@@ -31,9 +32,8 @@ const AboutPic = () => {
       style={{
         display: 'flex',
         alignItems: 'center',
-        // border: '2px solid red',
+
         height: '100%',
-        // border: '2px solid purple',
       }}
     >
       <Grid
@@ -49,11 +49,13 @@ const AboutPic = () => {
         }}
       >
         <Flip left>
-          <img
+          {/* <img
             src='../DCpic.png'
             alt='Denis Corlotean picture'
             className='dc-image'
-          />
+          /> */}
+
+          <Image />
         </Flip>
       </Grid>
       <Grid
@@ -74,7 +76,7 @@ const AboutPic = () => {
             <IconButton
               style={{ color: 'white' }}
               className='icon-on-hover'
-              href='https://github.com/Sakaluke'
+              href='https://github.com/agdgdag'
               target='_blank'
               rel='noopener noreferrer'
             >
@@ -91,7 +93,7 @@ const AboutPic = () => {
               <InstagramIcon style={{ fontSize: '1.7rem' }} />
             </IconButton>
 
-            <IconButton
+            {/* <IconButton
               style={{ color: 'white' }}
               className='icon-on-hover'
               href='https://www.facebook.com/GooseFxStudio'
@@ -99,8 +101,8 @@ const AboutPic = () => {
               rel='noopener noreferrer'
             >
               <FacebookIcon style={{ fontSize: '1.8rem' }} />
-            </IconButton>
-            <IconButton
+            </IconButton> */}
+            {/* <IconButton
               style={{ color: 'white' }}
               className='icon-on-hover'
               href='https://twitter.com/fx_goose'
@@ -108,7 +110,7 @@ const AboutPic = () => {
               rel='noopener noreferrer'
             >
               <TwitterIcon style={{ fontSize: '1.8rem' }} />
-            </IconButton>
+            </IconButton> */}
             <IconButton
               style={{ color: 'white' }}
               className='icon-on-hover'
@@ -138,7 +140,7 @@ const AboutPic = () => {
               backgroundColor: '#5b84b1',
             }}
             className='btn-on-hover'
-            href='../DenisCorloteanCV.pdf'
+            href='../Denis Corlotean - Resume.pdf'
             download='Denis Corlotean CV'
             endIcon={<SaveIcon />}
           >
@@ -157,11 +159,11 @@ const AboutPic = () => {
             <p style={{ padding: '1rem 0 ', paddingBottom: '4rem' }}>
               <cite>
                 <span style={{ fontWeight: '500' }}>
-                  " Programming isn't about what you know, it's about what you
-                  can figure out. ”
+                  " - Why did the functional programmer get thrown out of school ?
+                  <br/>
+                    - Because he refused to take classes.”
                 </span>
               </cite>{' '}
-              - Chris Pine
             </p>
           </Fade>
         </div>

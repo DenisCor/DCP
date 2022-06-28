@@ -49,8 +49,7 @@ const AboutText = () => {
             Although I put more time and effort into front-end development,
             curiosity found its way into the back-end side as well, just so I
             can have a better understanding of both worlds. One of my aspiring
-            goals is to expand my knowledge in this direction as well until I
-            can finally call myself a full-stack developer. My skills set
+            goals is to expand my knowledge in this direction as well. My skills set
             consists of many technologies that are important in today`s web
             application building process, varying from UI building tools, front
             and back-end technologies, animations and even creating 3D meshes.
@@ -64,7 +63,7 @@ const AboutText = () => {
       </Grid>
       <Grid item>
         <Canvas
-          style={{ height: '50vh', width: 'auto' }}
+          style={{ height: '50vh', width: 'auto', cursor: 'pointer' }}
           colorManagement
           camera={{ position: [0, 100, 0], fov: 12 }}
         >
@@ -74,18 +73,18 @@ const AboutText = () => {
           </EffectComposer>
           <ambientLight castShadow intensity={0.5} />
           <directionalLight
-            position={[0, 25, 0]}
+            position={[1, 25, 0]}
             saturation={0.2}
             intensity={0.7}
           />
-          <pointLight position={[-10, -10, 10]} intensity={0.8} />
-          <pointLight position={[10, 20, -10]} intensity={0.6} />
-          <pointLight position={[0, -10, 0]} intensity={0.4} />
+           <pointLight position={[0, -10, 0]} intensity={0.1} />
+          <pointLight position={[0, 0, 100]} intensity={0.6} /> 
+          <pointLight position={[100, 0, 0]} intensity={0.6} />
           <Suspense fallback={null}>
             <Model
               url='/3DLogos.glb'
               position={[0, 0, 0]}
-              scale={[2.3, 2.3, 2.3]}
+              scale={[2.8, 2.8, 2.8]}
               args={[3, 2, 1]}
             />
           </Suspense>
