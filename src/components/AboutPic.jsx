@@ -61,7 +61,7 @@ const AboutPic = () => {
       <Grid
         item
         className='fontS'
-        className='icons-info'
+        // className='icons-info'
         style={{ padding: '2rem 0' }}
       >
         <Fade>
@@ -141,7 +141,7 @@ const AboutPic = () => {
             }}
             className='btn-on-hover'
             href='../Denis Corlotean - Resume.pdf'
-            download='Denis Corlotean CV'
+            download='Denis Corlotean Resume'
             endIcon={<SaveIcon />}
           >
             DOWNLOAD CV
